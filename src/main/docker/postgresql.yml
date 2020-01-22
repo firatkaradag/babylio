@@ -1,0 +1,11 @@
+version: '2'
+services:
+  babylio-postgresql:
+    image: postgres:11.6
+    # volumes:
+    #     - ~/volumes/jhipster/babylio/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=babylio
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
