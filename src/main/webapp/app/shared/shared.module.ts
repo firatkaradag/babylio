@@ -6,9 +6,18 @@ import { AlertErrorComponent } from './alert/alert-error.component';
 import { LoginModalComponent } from './login/login.component';
 import { HasAnyAuthorityDirective } from './auth/has-any-authority.directive';
 
+import { CardComponent } from './card/card.component';
+
 @NgModule({
   imports: [BabylioSharedLibsModule],
-  declarations: [FindLanguageFromKeyPipe, AlertComponent, AlertErrorComponent, LoginModalComponent, HasAnyAuthorityDirective],
+  declarations: [
+    FindLanguageFromKeyPipe,
+    AlertComponent,
+    AlertErrorComponent,
+    LoginModalComponent,
+    HasAnyAuthorityDirective,
+    CardComponent
+  ],
   entryComponents: [LoginModalComponent],
   exports: [
     BabylioSharedLibsModule,
@@ -16,7 +25,8 @@ import { HasAnyAuthorityDirective } from './auth/has-any-authority.directive';
     AlertComponent,
     AlertErrorComponent,
     LoginModalComponent,
-    HasAnyAuthorityDirective
+    HasAnyAuthorityDirective,
+    CardComponent
   ]
 })
 export class BabylioSharedModule {}
