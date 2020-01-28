@@ -8,7 +8,7 @@ import { Audit } from './audit.model';
 import { AuditsService } from './audits.service';
 
 @Component({
-  selector: 'jhi-audit',
+  selector: 'lio-audit',
   templateUrl: './audits.component.html'
 })
 export class AuditsComponent implements OnInit {
