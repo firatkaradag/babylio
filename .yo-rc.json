@@ -31,7 +31,7 @@
     "clientThemeVariant": "",
     "creationTimestamp": 1579655062770,
     "testFrameworks": ["gatling", "cucumber", "protractor"],
-    "jhiPrefix": "jhi",
+    "jhiPrefix": "lio",
     "entitySuffix": "",
     "dtoSuffix": "DTO",
     "otherModules": [],

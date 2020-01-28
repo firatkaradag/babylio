@@ -7,8 +7,6 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { CardComponent } from './card/card.component';
-
 @NgModule({
   exports: [
     FormsModule,
@@ -18,8 +16,7 @@ import { CardComponent } from './card/card.component';
     InfiniteScrollModule,
     FontAwesomeModule,
     ReactiveFormsModule,
-    TranslateModule,
-    CardComponent
+    TranslateModule
   ]
 })
 export class BabylioSharedLibsModule {}

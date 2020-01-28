@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { JhiAlertService, JhiAlert } from 'ng-jhipster';
 
 @Component({
-  selector: 'jhi-alert',
+  selector: 'lio-alert',
   template: `
     <div class="alerts" role="alert">
       <div *ngFor="let alert of alerts" [ngClass]="setClasses(alert)">

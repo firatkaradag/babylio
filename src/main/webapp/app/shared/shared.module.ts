@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { MatCardModule } from '@angular/material';
 import { BabylioSharedLibsModule } from './shared-libs.module';
 import { FindLanguageFromKeyPipe } from './language/find-language-from-key.pipe';
 import { AlertComponent } from './alert/alert.component';
@@ -9,7 +10,7 @@ import { HasAnyAuthorityDirective } from './auth/has-any-authority.directive';
 import { CardComponent } from './card/card.component';
 
 @NgModule({
-  imports: [BabylioSharedLibsModule],
+  imports: [BabylioSharedLibsModule, MatCardModule],
   declarations: [
     FindLanguageFromKeyPipe,
     AlertComponent,
@@ -18,7 +19,7 @@ import { CardComponent } from './card/card.component';
     HasAnyAuthorityDirective,
     CardComponent
   ],
-  entryComponents: [LoginModalComponent],
+  entryComponents: [LoginModalComponent, CardComponent],
   exports: [
     BabylioSharedLibsModule,
     FindLanguageFromKeyPipe,

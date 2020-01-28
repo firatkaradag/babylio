@@ -5,19 +5,17 @@ import { LoginModalService } from 'app/core/login/login-modal.service';
 import { AccountService } from 'app/core/auth/account.service';
 import { Account } from 'app/core/user/account.model';
 
-// import { CardComponent } from 'app/shared/card/card.component';
 import { Baby } from 'app/shared/card/baby';
 
 @Component({
-  selector: 'jhi-home',
+  selector: 'lio-home',
   templateUrl: './home.component.html',
   styleUrls: ['home.scss']
 })
 export class HomeComponent implements OnInit, OnDestroy {
-  myBabyList: Baby[] = [];
-
   account: Account | null = null;
   authSubscription?: Subscription;
+  myBabyList: Baby[] = [];
 
   constructor(private accountService: AccountService, private loginModalService: LoginModalService) {}
 
