@@ -17,10 +17,35 @@ export class HomeComponent implements OnInit, OnDestroy {
   authSubscription?: Subscription;
   myBabyList: Baby[] = [];
 
+  // Greeting Start
+  //:string kaldirilca hata cozuldu
+  greeting = 'Welcome';
+  //:string kaldirilca hata cozuldu
+  firstName = 'Levent';
+
+  greet(): void {
+    //:void eklenince hata cozuldu
+    const today = new Date();
+    const curHr = today.getHours();
+
+    if (curHr >= 0 && curHr < 6) {
+      this.greeting = 'What are you doing that early?';
+    } else if (curHr >= 6 && curHr <= 12) {
+      this.greeting = 'Good Morning';
+    } else if (curHr >= 12 && curHr < 17) {
+      this.greeting = 'Good Afternoon';
+    } else {
+      this.greeting = 'Good Evening';
+    }
+  }
+  // Greeting End
+
   constructor(private accountService: AccountService, private loginModalService: LoginModalService) {}
 
   ngOnInit(): void {
     this.authSubscription = this.accountService.getAuthenticationState().subscribe(account => (this.account = account));
+
+    this.greet();
 
     this.myBabyList = [
       {
