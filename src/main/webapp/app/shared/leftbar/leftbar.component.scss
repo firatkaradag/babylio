@@ -4,11 +4,17 @@
   background-color: whitesmoke;
   padding-top: 60px;
 }
-.header-image1 {
-  background-image: url('https://images.unsplash.com/photo-1569095380079-90096b58b1d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+.profile-image {
+  /* make a square container */
+  width: 150px;
+  height: 150px;
+
+  /* fill the container, preserving aspect ratio, and cropping to fit */
   background-size: cover;
-  height: 200px;
-  width: 200px;
-  margin: center;
-  padding: 15px, 15px;
+
+  /* center the image vertically and horizontally */
+  background-position: top center;
+
+  /* round the edges to a circle with border radius 1/2 container size */
+  border-radius: 50%;
 }

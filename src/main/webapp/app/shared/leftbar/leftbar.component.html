@@ -1,7 +1,12 @@
 <div class="sidebar">
-    <img mat-card-avatar class="header-image1">
-    <h4 jhiTranslate="global.menu.leftbar"></h4> 
+    <img [src]="getImageUrl()" class="profile-image">
+    <h4 *ngIf="account" jhiTranslate="global.menu.greet"  [translateValues]="{username: account.firstName}"></h4> 
+    <!-- <h2 *ngIf="account" jhiTranslate="home.logged.message"
+    [translateValues]="{username: account.firstName}"></h2> -->
+
     <!-- leftbar.name login yada profil name olabilir -->
+
+
 
     <div class="leftbar">
         <a class="left-bar-item" href="">Baby</a><br>
