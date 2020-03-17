@@ -10,7 +10,7 @@
         <p class="lead" jhiTranslate="home.subtitle">This is your homepage</p>
 
         <!-- Authentication Start-->
-        <div [ngSwitch]="isAuthenticated()">
+        <!-- <div [ngSwitch]="isAuthenticated()">
             <div class="alert alert-success" *ngSwitchCase="true">
                 <span id="home-logged-message" *ngIf="account" jhiTranslate="home.logged.message"
                     [translateValues]="{username: account.login}"> You are looogged in as user "{{account.login}}". </span>
@@ -24,13 +24,13 @@
                 <span jhiTranslate="global.messages.info.register.noaccount">You don't have an account yet?</span>&nbsp;
                 <a class="alert-link" routerLink="account/register" jhiTranslate="global.messages.info.register.link">Register a new account</a>
             </div>
-        </div>
+        </div> -->
         <!-- Authentication End-->
 
         <!-- Baby Card Start-->
-        <div id="card">
+        <!-- <div id="card">
             <lio-card *ngFor="let myBaby of myBabyList" [baby]="myBaby"></lio-card>
-        </div>
+        </div> -->
         <!-- Baby Card End-->
     </div>
 </div>
