@@ -4,6 +4,6 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'lio-leftbar',
   templateUrl: './leftbar.component.html',
-  styleUrls: ['./leftbar.scss']
+  styleUrls: ['./leftbar.component.scss']
 })
 export class LeftbarComponent {}
