@@ -14,6 +14,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
 import { ErrorComponent } from './layouts/error/error.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,7 @@ import { ErrorComponent } from './layouts/error/error.component';
     BabylioEntityModule,
     BabylioAppRoutingModule
   ],
-  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
+  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent, NewsComponent],
   bootstrap: [MainComponent]
 })
 export class BabylioAppModule {}

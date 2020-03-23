@@ -1,16 +1,17 @@
 <div class="sidebar">
     <!-- <img [src]="getImageUrl()" class="profile-image">
-    <h4 *ngIf="account" jhiTranslate="global.menu.greet"  [translateValues]="{username: account.firstName}"></h4> 
+    <h4 *ngIf="account" jhiTranslate="global.menu.greet"  [translateValues]="{username: account.firstName}"></h4>  -->
 
     <div class="leftbar">
-        <a class="left-bar-item" routerLink="addbaby">addbaby</a><br>
-        <a class="left-bar-item" routerLink="./addbaby" >yeni deneme</a><br>
-        <a class="left-bar-item" routerLink="../addbaby" >News</a><br>
-        <a class="left-bar-item"></a><br>
 
-            <a class="left-bar-item" routerLink="addbaby">Babye</a><br>
+        <a class="left-bar-item" routerLink="./addbaby" >Addbaby</a><br>
+        <a class="left-bar-item" [routerLink]="['./addbaby']" >Addbaby</a><br>
+        <a class="left-bar-item" routerLink="./card" >card</a><br>
+        <a class="left-bar-item" [routerLink]="['./card']">card</a><br>
+        
 
-        <li><a routerLink="/addbaby" >add baby</a></li>
-        <a routerLink="/addbaby" >add baby</a>
-    </div> -->
+    </div>
 </div>
+
+<!-- {{<lio-card *ngFor="let myBaby of myBabyList" [baby]="myBaby"></lio-card>}} -->
+<!-- *ngFor="let myBaby of myBabyList" [baby]="myBaby" -->

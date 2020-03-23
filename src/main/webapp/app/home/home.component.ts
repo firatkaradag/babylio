@@ -41,7 +41,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   // Greeting End
 
   constructor(private accountService: AccountService, private loginModalService: LoginModalService) {}
-
   ngOnInit(): void {
     this.authSubscription = this.accountService.getAuthenticationState().subscribe(account => (this.account = account));
 
