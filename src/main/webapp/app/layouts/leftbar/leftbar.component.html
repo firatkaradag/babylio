@@ -3,6 +3,8 @@
     <h4 *ngIf="account" jhiTranslate="global.menu.greet"  [translateValues]="{username: account.firstName}"></h4>  -->
 
     <div class="leftbar">
+        
+        //<a class="left-bar-item" routerLink="./news" >news</a><br>
 
         <a class="left-bar-item" routerLink="./addbaby" >Addbaby</a><br>
         <a class="left-bar-item" [routerLink]="['./addbaby']" >Addbaby</a><br>
