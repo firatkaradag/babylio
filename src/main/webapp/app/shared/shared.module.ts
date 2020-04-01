@@ -7,7 +7,7 @@ import { LoginModalComponent } from './login/login.component';
 import { HasAnyAuthorityDirective } from './auth/has-any-authority.directive';
 
 import { CardComponent } from './card/card.component';
-import { AddbabyComponent } from './addbaby/addbaby.component';
+import { MybabyModule } from './mybaby/mybaby.module';
 
 @NgModule({
   imports: [BabylioSharedLibsModule],
@@ -18,7 +18,7 @@ import { AddbabyComponent } from './addbaby/addbaby.component';
     LoginModalComponent,
     HasAnyAuthorityDirective,
     CardComponent,
-    AddbabyComponent
+    MybabyModule
   ],
   entryComponents: [LoginModalComponent],
   exports: [
@@ -29,7 +29,7 @@ import { AddbabyComponent } from './addbaby/addbaby.component';
     LoginModalComponent,
     HasAnyAuthorityDirective,
     CardComponent,
-    AddbabyComponent
+    MybabyModule
   ]
 })
 export class BabylioSharedModule {}

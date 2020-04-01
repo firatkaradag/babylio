@@ -1,8 +1,8 @@
 import { Route } from '@angular/router';
 
 import { HomeComponent } from './home.component';
-import { AddbabyComponent } from 'app/shared/addbaby/addbaby.component';
-import { CardComponent } from 'app/shared/card/card.component';
+import { MybabyModule } from 'app/shared/mybaby/mybaby.module';
+//import { CardComponent } from 'app/shared/card/card.component';
 import { NewsComponent } from 'app/news/news.component';
 
 import { LeftbarComponent } from 'app/layouts/leftbar/leftbar.component';
@@ -20,13 +20,13 @@ export const HOME_ROUTE: Route = {
       component: LeftbarComponent
     },
     {
-      path: 'addbaby',
-      component: AddbabyComponent
+      path: 'mybaby',
+      component: MybabyModule
     },
-    {
-      path: 'card',
-      component: CardComponent
-    },
+    // {
+    //   path: 'card',
+    //   component: CardComponent
+    // },
     {
       path: 'news',
       component: NewsComponent
