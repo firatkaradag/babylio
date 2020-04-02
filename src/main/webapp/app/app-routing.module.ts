@@ -7,6 +7,7 @@ import { DEBUG_INFO_ENABLED } from 'app/app.constants';
 import { UserRouteAccessService } from 'app/core/auth/user-route-access-service';
 
 const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
+
 @NgModule({
   imports: [
     RouterModule.forRoot(
@@ -23,8 +24,6 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
           path: 'account',
           loadChildren: () => import('./account/account.module').then(m => m.AccountModule)
         },
-        { path: '', redirectTo: '/babies', pathMatch: 'full' },
-
         ...LAYOUT_ROUTES
       ],
       { enableTracing: DEBUG_INFO_ENABLED }

@@ -6,14 +6,10 @@
         
         //<a class="left-bar-item" routerLink="./news" >news</a><br>
 
-        <a class="left-bar-item" routerLink="./mybaby" >Mybaby</a><br>
-        <a class="left-bar-item" [routerLink]="['./mybaby']" >Mybaby</a><br>
-        <a class="left-bar-item" routerLink="./card" >card</a><br>
+        <!-- card'larin ikiside calisiyor ama gecis yapilamiyor -->
+        <a class="left-bar-item" routerLink="./card" >card</a><br> 
         <a class="left-bar-item" [routerLink]="['./card']">card</a><br>
-        <a routerLink="/babies" routerLinkActive="active">Babies</a>
+
 
     </div>
 </div>
-
-<!-- {{<lio-card *ngFor="let myBaby of myBabyList" [baby]="myBaby"></lio-card>}} -->
-<!-- *ngFor="let myBaby of myBabyList" [baby]="myBaby" -->

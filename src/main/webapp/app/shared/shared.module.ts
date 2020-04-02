@@ -7,7 +7,11 @@ import { LoginModalComponent } from './login/login.component';
 import { HasAnyAuthorityDirective } from './auth/has-any-authority.directive';
 
 import { CardComponent } from './card/card.component';
-import { MybabyModule } from './mybaby/mybaby.module';
+
+import { NewsComponent } from '../news/news.component';
+// import { BabyListComponent } from './mybaby/babyList/babyList.component';
+// import { BabyDetailComponent } from './mybaby/babyDetail/babyDetail.component';
+// import { MybabyRoutingModule } from './mybaby/mybaby-routing.module';
 
 @NgModule({
   imports: [BabylioSharedLibsModule],
@@ -18,7 +22,7 @@ import { MybabyModule } from './mybaby/mybaby.module';
     LoginModalComponent,
     HasAnyAuthorityDirective,
     CardComponent,
-    MybabyModule
+    NewsComponent
   ],
   entryComponents: [LoginModalComponent],
   exports: [
@@ -29,7 +33,7 @@ import { MybabyModule } from './mybaby/mybaby.module';
     LoginModalComponent,
     HasAnyAuthorityDirective,
     CardComponent,
-    MybabyModule
+    NewsComponent
   ]
 })
 export class BabylioSharedModule {}
