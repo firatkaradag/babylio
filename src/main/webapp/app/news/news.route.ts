@@ -3,7 +3,9 @@ import { Route } from '@angular/router';
 import { NewsComponent } from './news.component';
 
 export const newsRoute: Route = {
-  path: '',
+  path: 'news',
   component: NewsComponent,
-  outlet: 'news'
+  data: {
+    pageTitle: 'news'
+  }
 };

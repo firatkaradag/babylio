@@ -4,8 +4,7 @@ import { HomeComponent } from './home.component';
 // import { MybabyModule } from 'app/shared/mybaby/mybaby.module';
 import { CardComponent } from 'app/shared/card/card.component';
 import { NewsComponent } from 'app/news/news.component';
-
-import { LeftbarComponent } from 'app/layouts/leftbar/leftbar.component';
+import { BabyListComponent } from 'app/mybaby/baby-list/baby-list.component';
 
 export const HOME_ROUTE: Route = {
   path: '',
@@ -16,16 +15,16 @@ export const HOME_ROUTE: Route = {
   },
   children: [
     {
-      path: 'leftbar',
-      component: LeftbarComponent
-    },
-    {
       path: 'card',
       component: CardComponent
     },
     {
       path: 'news',
       component: NewsComponent
+    },
+    {
+      path: 'mybaby',
+      component: BabyListComponent
     }
   ]
 };

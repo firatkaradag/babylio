@@ -1,16 +1,10 @@
-<div class="row">
-    <div class="col-md-3">
-        <!-- LEFTBAR -->
-        <lio-leftbar></lio-leftbar>
-        <!-- <span class="hipster img-fluid rounded"></span> -->
-    </div>
-    <div class="col-md-9">
+<div>
+
         <h1 class="display-4" jhiTranslate="home.title">Welcome, Babylio</h1>
         <h2 *ngIf="account" jhiTranslate="home.logged.message"
         [translateValues]="{username: account.firstName}"></h2>
         <p class="lead" jhiTranslate="home.subtitle">This is your homepage</p>
         <router-outlet></router-outlet>
-
         <!-- Authentication Start-->
         <!-- <div [ngSwitch]="isAuthenticated()">
             <div class="alert alert-success" *ngSwitchCase="true">
@@ -34,5 +28,5 @@
             <lio-card *ngFor="let myBaby of myBabyList" [baby]="myBaby"></lio-card>
         </div> -->
         <!-- Baby Card End-->
-    </div>
+
 </div>

@@ -5,13 +5,7 @@ import { AlertComponent } from './alert/alert.component';
 import { AlertErrorComponent } from './alert/alert-error.component';
 import { LoginModalComponent } from './login/login.component';
 import { HasAnyAuthorityDirective } from './auth/has-any-authority.directive';
-
 import { CardComponent } from './card/card.component';
-
-import { NewsComponent } from '../news/news.component';
-// import { BabyListComponent } from './mybaby/babyList/babyList.component';
-// import { BabyDetailComponent } from './mybaby/babyDetail/babyDetail.component';
-// import { MybabyRoutingModule } from './mybaby/mybaby-routing.module';
 
 @NgModule({
   imports: [BabylioSharedLibsModule],
@@ -21,8 +15,7 @@ import { NewsComponent } from '../news/news.component';
     AlertErrorComponent,
     LoginModalComponent,
     HasAnyAuthorityDirective,
-    CardComponent,
-    NewsComponent
+    CardComponent
   ],
   entryComponents: [LoginModalComponent],
   exports: [
@@ -32,8 +25,7 @@ import { NewsComponent } from '../news/news.component';
     AlertErrorComponent,
     LoginModalComponent,
     HasAnyAuthorityDirective,
-    CardComponent,
-    NewsComponent
+    CardComponent
   ]
 })
 export class BabylioSharedModule {}

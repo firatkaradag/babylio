@@ -14,6 +14,9 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
 import { ErrorComponent } from './layouts/error/error.component';
+import { LeftbarComponent } from './layouts/leftbar/leftbar.component';
+import { MybabyModule } from './mybaby/mybaby.module';
+import { MybabyRoutingModule } from './mybaby/mybaby-routing.module';
 
 @NgModule({
   imports: [
@@ -23,9 +26,19 @@ import { ErrorComponent } from './layouts/error/error.component';
     BabylioHomeModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     BabylioEntityModule,
-    BabylioAppRoutingModule
+    BabylioAppRoutingModule,
+    MybabyModule,
+    MybabyRoutingModule
   ],
-  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
+  declarations: [
+    MainComponent,
+    NavbarComponent,
+    ErrorComponent,
+    PageRibbonComponent,
+    ActiveMenuDirective,
+    FooterComponent,
+    LeftbarComponent
+  ],
   bootstrap: [MainComponent]
 })
 export class BabylioAppModule {}

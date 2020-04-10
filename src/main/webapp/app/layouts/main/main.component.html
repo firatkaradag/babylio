@@ -2,9 +2,23 @@
 <div>
     <router-outlet name="navbar"></router-outlet>
 </div>
+
 <div class="container-fluid">
-    <div class="card jh-card">
-        <router-outlet></router-outlet>
+
+    <div class="row">
+        <div class="col-md-3">
+            <lio-leftbar></lio-leftbar>
+        </div>
+        <div class="col-md-9">
+            <div class="card jh-card">
+                <router-outlet></router-outlet>
+        </div>
+        </div>
     </div>
+
+
+
+
+
     <lio-footer></lio-footer>
 </div>

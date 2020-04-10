@@ -8,7 +8,7 @@ import { Baby } from './baby';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-  @Input() baby: Baby | undefined;
+  @Input() BABIES: Baby | undefined;
 
   constructor() {}
 
